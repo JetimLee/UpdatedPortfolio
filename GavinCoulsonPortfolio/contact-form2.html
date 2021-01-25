@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container2">
+        <nav class="topnav">
+          <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact-form2.html">Contact Me</a></li>
+         </ul>
+        </nav>
+      </div>
+      
+    <div class="contact-section">
+        <h1>Contact Me!</h1>
+       <div class="border" id = "warning"></div>
+        <form class="contact-form" id="myForm" onsubmit="return printInformationToLog()">
+            <input type="text"  class="contact-form-text required" onchange="enableSubmit()" placeholder="Your First Name" id="firstName" required>
+            <input type ="text"  class="contact-form-text required"  placeholder="Your Last Name" id="lastName" required>
+            <input type="text" class="contact-form-text required" placeholder="Your Email" id="yourEmail" required>
+            <input type="text" class="contact-form-text required" placeholder="Phone Number" id="yourPhoneNumber" required>
+            <textarea class=contact-form-text placeholder="Type your message here..." id="yourMessage" required></textarea>
+            <input type="checkbox" id = "horns">
+            <label class="coolparagraph" for="horns">Check Here if Your Game of Thrones Character Would Have  Horns</label>
+            <input type="submit" class="contact-form-btn" value="Send" id="submitBtn">
+
+        </form>
+      </div>
+      <div class="footer-content">
+        <div>
+          <nav>
+            <ul>
+              <li class="lifornav lifornava"><a style="text-decoration: none;"  href="contact-form2.html" class="cool-link">Contact</a></li>
+              <li class="lifornav lifornava"><a style="text-decoration: none;"  href="index.html" class="cool-link">Home</a></li>
+            </ul>
+          </nav>
+          <div>
+            <p id="languages"></p>
+            &copy;Gavin Coulson | Designed by Gavin Coulson
+          </div>
+        </div>
+    <script src="navbar.js"></script>
+    <script src="formValidation.js"></script>
+</body>
+</html>
